@@ -22,7 +22,7 @@ gradle build
 http://blog.plasticscm.com/2010/11/linus-on-branching.html
 https://stackoverflow.com/questions/30268332/why-does-the-linux-kernel-repository-have-only-one-branch/30268416
 
-TLDR; Commit pull request to master, check out from tagged semantic version.
+TLDR; Commit pull request to master, check out from tagged semantic version. Tagged odd versions should be considered unstable, even considered stable.
 
 ## Contributing content or assets
 
