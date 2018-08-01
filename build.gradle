@@ -66,6 +66,8 @@ dependencies {
     compile "javax.vecmath:vecmath:1.5.2"
     compile "com.simsilica:zay-es:1.2.1"
     compile "com.simsilica:zay-es-net:1.2.1"
+    compile "org.apache.logging.log4j:log4j-api:2.11.1"
+    compile "org.apache.logging.log4j:log4j-core:2.11.1"
 }
 
 eclipse {
