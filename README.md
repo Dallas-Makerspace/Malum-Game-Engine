@@ -6,9 +6,8 @@ Find a copy of the latest build at [Docker Hub](https://hub.docker.com/r/dallasm
 
 ## Prerequisites
 
-* Java 1.8+
-* Gradle
-* IDE of choice (vim, eclipse, etc.)
+Editor of your choice
+Godot Engine
 
 ## Setup
 
