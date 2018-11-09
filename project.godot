@@ -10,13 +10,16 @@ config_version=3
 
 [application]
 
-config/name="The Diasporic Crypt"
+config/name="Kakos Industries"
 run/main_scene="res://scenes/global.tscn"
 boot_splash/image="res://gui/loading/splash.png"
+boot_splash/fullsize=false
+boot_splash/bg_color=Color( 1, 1, 1, 1 )
 config/icon="res://icon.png"
 icon="res://icon.png"
-name="The Diasporic Crypt"
+name="Kakos Industries"
 BootSplash="res://gui/loading/splash.png"
+run/name="Kakos Industries"
 
 [debug]
 

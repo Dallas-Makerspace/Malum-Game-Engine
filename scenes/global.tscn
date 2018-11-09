@@ -524,7 +524,7 @@ tracks/8/keys = {
 "values": [ Color( 1, 1, 1, 0 ) ]
 }
 
-[node name="Global" type="Node2D"]
+[node name="Global" type="Node2D" index="0"]
 
 pause_mode = 2
 script = ExtResource( 1 )
@@ -558,6 +558,7 @@ _sections_unfolded = [ "Theme" ]
 
 [node name="Sprite" type="Sprite" parent="CanvasLayer/menu/BG" index="0"]
 
+visible = false
 self_modulate = Color( 0.135956, 0.279669, 0.527344, 1 )
 texture = ExtResource( 9 )
 centered = false
@@ -582,8 +583,11 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="logo" type="Node2D" parent="CanvasLayer/menu" index="1"]
 
+visible = false
+
 [node name="Sprite" type="Sprite" parent="CanvasLayer/menu/logo" index="0"]
 
+visible = false
 position = Vector2( 400, 99 )
 texture = ExtResource( 12 )
 _sections_unfolded = [ "Material", "Visibility" ]
@@ -693,6 +697,7 @@ text = "KEY_QUITGAME"
 
 [node name="info" parent="CanvasLayer/menu/main" index="1" instance=ExtResource( 13 )]
 
+visible = false
 margin_left = 723.0
 margin_top = 561.0
 margin_right = 800.0
@@ -707,6 +712,7 @@ icon = ExtResource( 14 )
 
 [node name="version" type="Label" parent="CanvasLayer/menu/main" index="2"]
 
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -1017,6 +1023,7 @@ max_lines_visible = -1
 
 [node name="container" type="RichTextLabel" parent="CanvasLayer/menu/info" index="1"]
 
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -2860,23 +2867,23 @@ bus = "BGM"
 
 [connection signal="pressed" from="CanvasLayer/menu/newgame/backbutton/back" to="." method="_on_newgame_back_pressed"]
 
-[connection signal="focus_entered" from="CanvasLayer/menu/newgame/friederich" to="CanvasLayer/menu/newgame/friederich" method="_on_focus_enter"]
-
 [connection signal="focus_entered" from="CanvasLayer/menu/newgame/friederich" to="." method="_on_friederich_focus_enter"]
 
-[connection signal="focus_exited" from="CanvasLayer/menu/newgame/friederich" to="CanvasLayer/menu/newgame/friederich" method="_on_focus_exit"]
+[connection signal="focus_entered" from="CanvasLayer/menu/newgame/friederich" to="CanvasLayer/menu/newgame/friederich" method="_on_focus_enter"]
 
 [connection signal="focus_exited" from="CanvasLayer/menu/newgame/friederich" to="." method="_on_friederich_focus_exit"]
 
-[connection signal="pressed" from="CanvasLayer/menu/newgame/friederich" to="." method="_on_friederich_selected"]
+[connection signal="focus_exited" from="CanvasLayer/menu/newgame/friederich" to="CanvasLayer/menu/newgame/friederich" method="_on_focus_exit"]
 
-[connection signal="focus_entered" from="CanvasLayer/menu/newgame/adela" to="CanvasLayer/menu/newgame/adela" method="_on_focus_enter"]
+[connection signal="pressed" from="CanvasLayer/menu/newgame/friederich" to="." method="_on_friederich_selected"]
 
 [connection signal="focus_entered" from="CanvasLayer/menu/newgame/adela" to="." method="_on_adela_focus_enter"]
 
-[connection signal="focus_exited" from="CanvasLayer/menu/newgame/adela" to="CanvasLayer/menu/newgame/adela" method="_on_focus_exit"]
+[connection signal="focus_entered" from="CanvasLayer/menu/newgame/adela" to="CanvasLayer/menu/newgame/adela" method="_on_focus_enter"]
 
 [connection signal="focus_exited" from="CanvasLayer/menu/newgame/adela" to="." method="_on_adela_focus_exit"]
+
+[connection signal="focus_exited" from="CanvasLayer/menu/newgame/adela" to="CanvasLayer/menu/newgame/adela" method="_on_focus_exit"]
 
 [connection signal="pressed" from="CanvasLayer/menu/newgame/adela" to="." method="_on_adela_selected"]
 

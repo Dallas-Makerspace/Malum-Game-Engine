@@ -1,2 +1,4 @@
 **/.DS_Store
 *.*~
+.import
+gui/confirm.wav.import gui/cursor.wav.import players/jump2.wav.import players/land.wav.import translations/translations.csv.import
